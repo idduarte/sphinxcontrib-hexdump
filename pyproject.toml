@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sphinxcontrib-hexdump"
+version = "0.1.0"
+description = "Sphinx directive to render deterministic monochrome hexdumps from binary files"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "sphinxcontrib-hexdump contributors" }
+]
+dependencies = [
+  "sphinx>=6.2"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Framework :: Sphinx :: Extension",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Documentation",
+  "Topic :: Software Development :: Documentation"
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=7.4"
+]
+
+[project.urls]
+Homepage = "https://github.com/idduarte/sphinxcontrib-hexdump"
+Repository = "https://github.com/idduarte/sphinxcontrib-hexdump"
+Issues = "https://github.com/idduarte/sphinxcontrib-hexdump/issues"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["sphinxcontrib*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
