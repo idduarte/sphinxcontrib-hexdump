@@ -48,6 +48,12 @@ Lowercase bytes are optional:
    :lowercase:
 ```
 
+## Example output
+
+```text
+00000000  48 65 6C 6C 6F 2C 20 68  65 78 64 75 6D 70 21 0A  Hello, hexdump!.
+```
+
 ## Options
 
 - `:bytes-per-line:` integer >= 1, default `16`

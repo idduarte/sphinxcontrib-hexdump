@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sphinxcontrib-hexdump"
-version = "0.1.0"
+version = "0.1.1"
 description = "Sphinx directive to render deterministic monochrome hexdumps from binary files"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -49,3 +49,4 @@ include = ["sphinxcontrib*"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-ra"
+
