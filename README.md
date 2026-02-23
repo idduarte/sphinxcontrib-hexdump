@@ -1,4 +1,4 @@
-﻿# sphinxcontrib-hexdump
+# sphinxcontrib-hexdump
 
 `sphinxcontrib-hexdump` is a Sphinx extension that renders files as classic monochrome hexdumps using a reStructuredText directive.
 
@@ -61,6 +61,11 @@ Lowercase bytes are optional:
 - Paths are resolved relative to the Sphinx source directory (`env.srcdir`).
 - Files outside the docs directory are allowed if they exist.
 - For very large files, prefer `:length:` and/or `:max-lines:` to keep output size bounded.
+
+## Release
+
+- TestPyPI and PyPI publishing workflows are included in `.github/workflows/`.
+- Full release steps are documented in `PUBLISHING.md`.
 
 ## Compatibility
 
